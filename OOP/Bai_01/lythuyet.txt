@@ -1,0 +1,86 @@
+Lap trinh huong doi tuong
+
++ De mo rong
++ De nang cap
++ Theo chuan muc
+
+I - Khai niem
+ + Thuoc tinh : la nhung bien duoc khoi tao trong mot lop co kem theo co che
+
+ + Phuong thuc : la nhung ham duoc khoi tao trong doi tuong va co kem theo
+ nhung co che
+ + Lop : la su dong gop cac phuong thuc va thuoc tinh voi nhau
+ + Doi tuong: la su the hien lai cua mot lop
+
+ Ex:
+    class ABC
+    public $name = 'Jackie';
+    public function test(){
+        // do something
+    }
+}
+
+$ten = new ABC();
+
+II- Ky thuat lap trinh huong doi tuong
+    1- Cach khai bao va su dung
+    + Khai bao thuoc tinh
+    Co che $ten
+    Co che $ten = "gia tri"
+    Ex: $name = "Kenny"
+    + Khai bao phuong thuc
+    Co che function ten_ham(ham so) {
+        //do something
+    }
+    public function test(){
+    }
+    Khai bao class:
+    class a{
+    }
+
+    Khai bao doi tuong
+    $ten = new Ten_Class
+    $a = new ABC
+
+    + Su dung :
+    Phai khoi tao 1 doi tuong thi moi co the su dung 1 phuong thuc va thuoc
+    tinh
+    $this->thuoc_tinh
+    $this->phuong_thuc
+    Dung doi tuong truy cac phuong thuc va thuoc tinh trong class
+
+    2 - Ham khoi tao
+    public function __constructor()
+    {
+    }
+
+    public function __destruct()
+    {
+    }
+
+    3 - Co che trong huong doi tuong
+        + Public : Co the su dung nhung doi tuong de truy cap vao phuong thuc
+        va thuoc tinh mang co che nay . Ho tro ke thua
+        + Protected : Khong the su dung nhung doi tuong de truy cap vao cac
+        phuong thuc va thuoc tinh . Ho tro su ke thua
+        + Private: Khong the su dung nhung doi tuong de truy cap vao cac
+        phuong thuc va thuoc tinh. Khong ho tro su ke thua
+    
+
+    4 - Su ke thua
+    class con extends cha {
+
+    }
+    Khi lop con ke thua lop cha thi co the su dung lai nhung phuong thuc va
+    thuoc tinh cua lop cha mien la chung khong mang co che private . Chi co
+    lop con moi co the su dung thuoc tinh va phuong thuc cua lop cha. Va mot
+    lop chi co the ke thua 1 lop
+
+    5 - parent:
+    parent::phuong_thuc();
+    ABC -> BCD -> DEF
+    test() test() test()
+
+    6- final:
+    Cho phep phuong thuc nao do la phuong thuc cuoi cung. Cho phep lop nao do
+    la lop cuoi cung

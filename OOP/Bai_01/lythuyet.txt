@@ -84,3 +84,52 @@ II- Ky thuat lap trinh huong doi tuong
     6- final:
     Cho phep phuong thuc nao do la phuong thuc cuoi cung. Cho phep lop nao do
     la lop cuoi cung
+    
+    7- Phuong thuc tinh, thuoc tinh tinh, Hang
+    static $name
+    static funtion test(){
+    }
+    self::$name
+    self::test()
+    
+    Khai bao hang so: const RED;
+    self::RED;
+    ABC::RED;
+    
+    8- Clone:
+    Clone doi tuong nhan bang trong huong doi tuong, giam thieu viec ton tai nguyen cho viec hinh thanh cac doi tuong 
+    khong can thiet
+    
+    9-Lazy loading:
+    La phuong phap tu dong goi file khi chung ta khoi tao doi tuong
+    function __autoload()
+    {
+        //do something...
+    }
+    
+    10- Abstract:
+    Lop truu tuong la lop chua cac phuong thuc truu tuong. Cac lop ke thua lop truu tuong phai thuc thi cac phuong thuc
+    truu tuong cua lop truu tuong
+    
+    Boss
+    connect()
+    disconnect()
+    
+    PHP
+    connect()
+    disconnect()
+    
+    ASP
+    connect()
+    disconnect()
+    
+    JSP
+    connect()
+    disconnect()
+    
+    11- Interface
+    interface ten
+    {
+        function amthanh();
+        function chan();
+    }

@@ -133,3 +133,12 @@ II- Ky thuat lap trinh huong doi tuong
         function amthanh();
         function chan();
     }
+III- To chuc code va mo hinh MVC
+    + Controller : co tac dung dieu huong du lieu toi cac chuc nang can thiet
+    + View : La phan nguoi dung co the thay duoc va tuong tac duoc
+    + Model : la phan tuong tac co so du lieu
+    
+    Add user:
+    Request -> Controller -> views -> controller -> model -> view
+    
+    

@@ -1,0 +1,35 @@
+I- Khai niem ve mang :
+Mang dung de luu tru du lieu. Muon truy cap mang thi can phai co khoa
+1 - Mang tuan tu
+$a = array("a", "b", "c")
+echo $a[2];
+
+2 - Mang bat tuan tu
+$a = array("name" => "jackie", "job" => "developer");
+key => value
+
+II- Duyet mang
+foreach ($mang as $value) {
+  echo $value;
+}
+
+foreach ($mang as $key => $value)
+{
+  echo $key . ' : ' . $value
+}
+
+III- Cau truc mang
+
+IV - Mang da chieu
+$arr = array("person" => array("name" => "Jackie", "job" => "developer"))
+
+V- Cac ham ho tro trong mang
+    + explode("???", $str) : ho tro chuyen 1 chuoi thanh 1 mang
+    + implode("???", $arr) : Ho tro chuyen 1 mang thanh 1 chuoi
+    + serialize() :  chuyen 1 mang thanh 1 chuoi
+    + unserialize() : chuyen doi 1 chuoi thanh 1 mang
+    + array_keys() : tach khoa cua 1 mang thanh 1 mang rieng
+    + array_values() : tach gia tri cua 1 mang thanh 1 mang rieng
+    + in_array() : Tim kiem cac phan tu ton tai trong mang
+    + is_array($arr) : Kiem tra phan tu truyen vao co phai la mang hay khong
+    + file("tenfile.txt") : Dua noi dung tung dong vao 1 phan tu trong mang

@@ -1,0 +1,31 @@
+Bai 01 : Tim hieu co ban ve Code Igniter
+1 - Cau truc co ban
+2 - Controller trong CI :
++ Tao trong thu muc application/controllers/
++ Cac file phai viet thuong
++ Trong file se la 1 class voi ten class bat dau bang chu in hoa va phai giong voi ten file
++ Class se ke thua CI_Controller
++ Class se co __constructor() va co tu khoa parent de han che ghi de len phuong thuc cua class base CI_Controller
++ Ten cac phuong thuc ben trong se dai dien cho action
++ Co the truyen tham so vao phuong thuc, va dieu do thi khong duoc khuyen khich
++ Khi chay duong dan se la : base_url/index.php/ten_controller/ten_action
++ Chi ho tro phan cap 1 tang
+3 - View trong CI
++ Muon load view tu controller ta goi : $this->load->view('ten', $tham_so);
++ Tham so khi truyen tu controller sang se bi chuyen 1 lan nen can luu du lieu duoi dang mang
++ Co the tao thu muc trong view va loadview tu controller binh thuong
+
+Luu y :
+Khong duoc tao action la list
+
+4-Model trong CI
++ De ket noi csdl : $this->load->database()
++ Thuc thi query : $this->db->query("")
++ Dem so record : $query->num_rows();
++ Lay tat ca record :  $query->result_array()
++ Lay 1 dong record : $query->row_array()
++ Active record :
+    Lay du lieu : $this->db->get('tableName')
+    Liet ke nhung column muon hien thi : $this->db->select('col1, col2..., coln')
+    Sap xep ket qua : $this->db->order_by('ten column type')
+    Gioi han ket qua : $this->db->limit(tong record, vi tri)

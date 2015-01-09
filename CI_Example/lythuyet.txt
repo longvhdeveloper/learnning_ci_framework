@@ -29,3 +29,60 @@ Khong duoc tao action la list
     Liet ke nhung column muon hien thi : $this->db->select('col1, col2..., coln')
     Sap xep ket qua : $this->db->order_by('ten column type')
     Gioi han ket qua : $this->db->limit(tong record, vi tri)
+
+
+Bai 02 : Helper - Form Helper - form validate
+I - Helper :
+La nhung ham duoc khoi nham phuc vu 1 so yeu cau cua ung dung
+C1
+$this->load->helper('url')
+$this->load->helper('form')
+C2
+$this->load->helper(array('url', 'form'));
+echo base_url;
+II - Form helper:
++ Tao form : form_open($url);
++ Dong form : form_close();
++ Tao the input : form_input();
++ Tao the fieldset : form_fieldset();
++ Tao the label : form_label();
++ Tao the dong fieldset : form_fieldset_close();
++ Tao the input password : form_password();
++ Tao the radio : input_raido();
++ Tao the select : input_dropdown();
++ Tao the submit : form_submit();
+
+III- Form_Validation
+$this->load->library('form_validation');
+$this->form_validation->method_name();
+$this->form_validation->set_rules('ten textbox', 'Ten', 'luat');
+$this->form_validation->run();
+echo validation_errors();
+
+Bai 03 : Thu vien Pagination va session
+I - Pagination:
+$this->load->library('pagination');
+$config['base_url'] = 'Duong dan den controller va action';
+$config['total_rows'] = Tong so record;
+$config['per_page'] = Bao nhieu record tren 1 trang
+$this->pagination->initialize($config);
+$this->pagination->create_links();
+
+II - Session:
+$this->load->library('session');
+$this->session->set_userdata('ten', 'gia tri');
+$data = array(
+    'username' => 'jackie',
+    'email' => 'vohoanglong07@gmail.com'
+);
+$this->session->set_userdata($data);
+
+$this->session->userdata('username');
+
+$this->session->unset_userdata('username');
+$data = array(
+    'username' => '',
+    'email' => ''
+);
+$this->session->unset_userdata($data);
+$this->session->sess_destroy();

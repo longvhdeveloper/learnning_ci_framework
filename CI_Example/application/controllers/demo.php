@@ -30,9 +30,6 @@ class Demo extends CI_Controller
         $this->db->where('level = ', '2');
         $query = $this->db->get('user');
         $data = $query->result_array();
-        echo '<pre>';
-        print_r($data);
-        echo '</pre>';
     }
 
     public function index3()
@@ -63,5 +60,26 @@ class Demo extends CI_Controller
         $this->load->database();
         $this->db->where('user_id', '5');
         $this->db->delete('user');
+    }
+
+    public function index6()
+    {
+        $this->load->database();
+        $this->db->select('user_id, username, password, lv_name');
+        $this->db->join('level', 'level.lv_id=user.level');
+        $query = $this->db->get('user');
+        $data = $query->result_array();
+        echo '<pre>';
+        print_r($data);
+        echo '</pre>';
+    }
+
+    public function index7()
+    {
+        $this->load->model('Mdemo');
+        $data = $this->Mdemo->listUser();
+        echo '<pre>';
+        print_r($data);
+        echo '</pre>';
     }
 }

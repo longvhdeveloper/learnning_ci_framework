@@ -35,7 +35,7 @@ class CI_Image_lib {
 	var $height				= '';
 	var $quality			= '90';
 	var $create_thumb		= FALSE;
-	var $thumb_marker		= '_thumb';
+	var $thumb_marker		= 'thumb_';
 	var $maintain_ratio		= TRUE;		// Whether to maintain aspect ratio when resizing or use hard values
 	var $master_dim			= 'auto';	// auto, height, or width.  Determines what to use as the master dimension
 	var $rotation_angle		= '';
@@ -260,7 +260,7 @@ class CI_Image_lib {
 		$file_ext = $xp['ext'];
 
 		$this->full_src_path = $this->source_folder.$this->source_image;
-		$this->full_dst_path = $this->dest_folder.$filename.$this->thumb_marker.$file_ext;
+		$this->full_dst_path = $this->dest_folder.$this->thumb_marker.$filename.$file_ext;
 
 		/*
 		 * Should we maintain image proportions?

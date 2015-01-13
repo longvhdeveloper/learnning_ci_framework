@@ -86,3 +86,45 @@ $data = array(
 );
 $this->session->unset_userdata($data);
 $this->session->sess_destroy();
+
+Bai 04 : Thu vien upload - image
+I - Upload:
+$config['upload_path'] = './uploads/';
+$config['allowed_types'] = 'gif|jpg|png';
+$config['max_size'] = '100';
+$config['max_width']  = '1024';
+$config['max_height']  = '768';
+
+$this->load->library('upload', $config);
+$this->upload->do_upload();
+$this->upload->data();
+$this->upload->display_errors();
+
+II - Image
+$this->load->library('image_lib');
+$this->image_lib->initialize($config);
+
+III - Calendar
+$this->load->library('calendar');
+$this->calendar->generate();
+
+Luu y : Khi su dung menh the like trong model thi phai su dung $this->db->from('ten bang') va su dung $this->db->get();
+
+
+Bai 06 : Cac phan khac trong CI
+I - Hook :
+    + Se duoc uu tien goi truoc khi request den voi controller. Vi the hook thuong duoc su dung de thao tac : phan quyen, xu ly da ngon ngu, da giao dien
+    + De xu dung hook ta can bat trong file cau hinh config/config.php
+        $config['enable_hooks'] = TRUE;
+    + Cau hinh trong file config/hooks.php
+    $hook['pre_controller'] = array(
+        'class'    => 'Vidu',
+        'function' => 'test',
+        'filename' => 'vidu.php',
+        'filepath' => 'hooks',
+        //'params'   => array('beer', 'wine', 'snacks')
+    );
+II - thu vien theo y muon
+III - Tim hieu core
+IV - URI Routing
+V - caching - autoload - other

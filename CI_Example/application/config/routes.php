@@ -40,6 +40,8 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
+$route['demo/test'] = 'user/index';
+$route['demo/vidu/:any'] = 'user/index10/$1';
 
 
 /* End of file routes.php */

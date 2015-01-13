@@ -16,4 +16,17 @@ class Mbook extends CI_Model
 
         return $result;
     }
+    
+    public function listAll()
+    {
+        $query = $this->db->get($this->tableName);
+        
+        return $query->result_array();
+    }
+    
+    public function getBookById($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get($this->tableName)->row_array();
+    }
 }

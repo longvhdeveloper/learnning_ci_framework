@@ -9,6 +9,7 @@ class User extends CI_Controller
     public function index()
     {
         $this->load->model('Muser');
+        $this->output->cache(3);
         $data['users'] = $this->Muser->listUsers();
         $this->load->view('user/index_view', $data);
     }
@@ -82,23 +83,29 @@ class User extends CI_Controller
         $data = array();
         $this->load->library('session');
         $this->load->helper('url');
-        
+
         if ($this->session->userdata('id') > 0) {
             $data['user']['username'] = $this->session->userdata('username');
-            
+
             $this->load->view('user/profile_view', $data);
         } else {
             $this->session->set_flashdata('flash_login', 'Please login to user this function');
             redirect(base_url() . 'index.php/user/login');
         }
     }
-    
+
     public function logout()
     {
         $this->load->library('session');
         $this->load->helper('url');
-        
+
         $this->session->sess_destroy();
         redirect(base_url() . 'index.php/user/login');
+    }
+
+    public function index10()
+    {
+        $id = $this->uri->segment(3);
+        echo $id;
     }
 }

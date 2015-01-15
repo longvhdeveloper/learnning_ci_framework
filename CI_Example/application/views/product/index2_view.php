@@ -1,0 +1,1 @@
+<h1>Product controller index2 action</h1>

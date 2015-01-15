@@ -128,3 +128,16 @@ II - thu vien theo y muon
 III - Tim hieu core
 IV - URI Routing
 V - caching - autoload - other
+
+Bai 07 : Master layout
+
+HMVC : la chia tach ung dung thanh nhung module nho MVC
+
+Bai 08 :
+Thu vien Zend_ACL tich hop trong CI
+
+hook
+
++ Thiet lap nhom quyen : guest , member, admin
++ Thiet lap nhom tai nguyen : user, demo
++ Gan nhom quyen vao tai nguyen

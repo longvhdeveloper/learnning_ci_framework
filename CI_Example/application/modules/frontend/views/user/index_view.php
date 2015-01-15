@@ -1,0 +1,1 @@
+<h1>Controller user - index action</h1>

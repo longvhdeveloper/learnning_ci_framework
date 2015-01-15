@@ -1,0 +1,18 @@
+.my-btn{
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.my-btn i{
+    margin-left: -5px !important;
+    margin-right: 5px !important;
+}
+
+.form-data{
+    margin: 20px 40px;
+}
+
+.my_error{
+    width: 450px;
+    margin: 10px 0px 0px 15px;
+}

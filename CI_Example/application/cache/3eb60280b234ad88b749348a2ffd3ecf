@@ -1,0 +1,33 @@
+1421207775TS---><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List user</title>
+    <style>
+        td{
+        border: 1px solid blue;
+    }
+    .title{
+        border: 1px solid blue;
+        background: blue;
+        color: #fff;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <table style="width:450px;margin:0px auto;">
+        <thead>
+            <tr>
+                <th class="title">STT</th>
+                <th class="title">Username</th>
+                <th class="title">Level</th>
+                <th class="title">Edit</th>
+                <th class="title">Del</th>
+            </tr>
+        </thead>
+        <tbody>
+<tr><td>1</td><td>archdurgan</td><td>Member</td><td><a href="index.php/user/edit/id/25">Edit</a></td><td><a href="index.php/user/del/id/25">Del</a></td></tr><tr><td>2</td><td>loraineherman</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/24">Edit</a></td><td><a href="index.php/user/del/id/24">Del</a></td></tr><tr><td>3</td><td>ivykertzmann</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/23">Edit</a></td><td><a href="index.php/user/del/id/23">Del</a></td></tr><tr><td>4</td><td>beaulahvonrueden</td><td>Member</td><td><a href="index.php/user/edit/id/22">Edit</a></td><td><a href="index.php/user/del/id/22">Del</a></td></tr><tr><td>5</td><td>franciscoernser</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/21">Edit</a></td><td><a href="index.php/user/del/id/21">Del</a></td></tr><tr><td>6</td><td>drmarianeklockodvm</td><td>Member</td><td><a href="index.php/user/edit/id/20">Edit</a></td><td><a href="index.php/user/del/id/20">Del</a></td></tr><tr><td>7</td><td>maeganmcdermottiii</td><td>Member</td><td><a href="index.php/user/edit/id/19">Edit</a></td><td><a href="index.php/user/del/id/19">Del</a></td></tr><tr><td>8</td><td>missashleeroobi</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/18">Edit</a></td><td><a href="index.php/user/del/id/18">Del</a></td></tr><tr><td>9</td><td>drvestagoyette</td><td>Member</td><td><a href="index.php/user/edit/id/17">Edit</a></td><td><a href="index.php/user/del/id/17">Del</a></td></tr><tr><td>10</td><td>carolannevolkmaniii</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/16">Edit</a></td><td><a href="index.php/user/del/id/16">Del</a></td></tr><tr><td>11</td><td>bellaheaney</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/15">Edit</a></td><td><a href="index.php/user/del/id/15">Del</a></td></tr><tr><td>12</td><td>profmertiemiller</td><td>Member</td><td><a href="index.php/user/edit/id/14">Edit</a></td><td><a href="index.php/user/del/id/14">Del</a></td></tr><tr><td>13</td><td>drhenristark</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/13">Edit</a></td><td><a href="index.php/user/del/id/13">Del</a></td></tr><tr><td>14</td><td>profhymanhayesii</td><td>Member</td><td><a href="index.php/user/edit/id/12">Edit</a></td><td><a href="index.php/user/del/id/12">Del</a></td></tr><tr><td>15</td><td>raquelhirthe</td><td>Member</td><td><a href="index.php/user/edit/id/11">Edit</a></td><td><a href="index.php/user/del/id/11">Del</a></td></tr><tr><td>16</td><td>shanycrooks</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/10">Edit</a></td><td><a href="index.php/user/del/id/10">Del</a></td></tr><tr><td>17</td><td>andrepurdy</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/9">Edit</a></td><td><a href="index.php/user/del/id/9">Del</a></td></tr><tr><td>18</td><td>mrashtongreenholti</td><td>Member</td><td><a href="index.php/user/edit/id/8">Edit</a></td><td><a href="index.php/user/del/id/8">Del</a></td></tr><tr><td>19</td><td>msashleywittingiii</td><td>Member</td><td><a href="index.php/user/edit/id/7">Edit</a></td><td><a href="index.php/user/del/id/7">Del</a></td></tr><tr><td>20</td><td>misslysannelind</td><td>Member</td><td><a href="index.php/user/edit/id/6">Edit</a></td><td><a href="index.php/user/del/id/6">Del</a></td></tr><tr><td>21</td><td>jackie</td><td>Member</td><td><a href="index.php/user/edit/id/4">Edit</a></td><td><a href="index.php/user/del/id/4">Del</a></td></tr><tr><td>22</td><td>lili</td><td>Member</td><td><a href="index.php/user/edit/id/2">Edit</a></td><td><a href="index.php/user/del/id/2">Del</a></td></tr><tr><td>23</td><td>longvo</td><td><font color="red">Administrator</font></td><td><a href="index.php/user/edit/id/1">Edit</a></td><td><a href="index.php/user/del/id/1">Del</a></td></tr>        </tbody>
+    </table>
+</body>
+</html>

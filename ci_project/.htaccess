@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|upload|public|img|robots\.txt)
+RewriteRule ^(.*)$ /learnning_ci_framework/ci_project/index.php/$1 [L]

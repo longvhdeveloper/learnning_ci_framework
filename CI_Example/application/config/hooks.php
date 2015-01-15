@@ -10,10 +10,10 @@
 |
 */
 
-$hook['pre_controller'] = array(
-    'class'    => 'Vidu',
-    'function' => 'test',
-    'filename' => 'vidu.php',
+$hook['post_controller_constructor'] = array(
+    'class'    => 'MyAccess',
+    'function' => 'checkAccess',
+    'filename' => 'MyAccess.php',
     'filepath' => 'hooks',
     //'params'   => array('beer', 'wine', 'snacks')
 );

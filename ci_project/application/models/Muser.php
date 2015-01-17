@@ -68,4 +68,17 @@ class Muser extends CI_Model
         $this->db->where('id', $id);
         $this->db->update($this->_tableName, $data);
     }
+
+    public function checkLogin($username, $password)
+    {
+        $this->db->where('username', $username);
+        $this->db->where('password', $password);
+        $query = $this->db->get($this->_tableName);
+
+        if ($query->num_rows() > 0) {
+            return $query->row_array();
+        } else {
+            return false;
+        }
+    }
 }

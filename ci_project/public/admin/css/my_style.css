@@ -13,6 +13,18 @@
 }
 
 .my_error{
-    width: 450px;
+    width: 250px;
     margin: 10px 0px 0px 15px;
+}
+
+.hideinit{
+    display: none;
+}
+
+.alert{
+    font-size: 1.0em;
+    padding: 1em;
+    text-align:center;
+    width:auto;
+    word-wrap:normal;
 }

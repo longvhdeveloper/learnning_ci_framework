@@ -1,7 +1,7 @@
 <?php
 class User extends AdminController
 {
-    public function ___construct()
+    public function __construct()
     {
         parent::__construct();
     }

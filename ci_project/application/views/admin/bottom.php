@@ -18,6 +18,7 @@
 <script src="<?php echo base_url() . 'public/' . $module; ?>/js/jquery-1.7.2.min.js"></script>
 <script src="<?php echo base_url() . 'public/' . $module; ?>/js/bootstrap.js"></script>
 <script src="<?php echo base_url() . 'public/' . $module; ?>/js/base.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="<?php echo base_url() . 'public/' . $module; ?>/js/app.js"></script>
 </body>
 </html>

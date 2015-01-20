@@ -25,7 +25,8 @@
 if ($others != false) {
     echo '<ul>';
     foreach ($others as $key => $item) {
-        echo '<li><a href="'.base_url().'default/news/detail/'.$item['id'].'">'.$item['title'].'</a></li>';
+    	$urlTitle = unicode($item['title']);
+        echo '<li><a href="'.base_url().'news/detail/'.$item['id'].'-'.$urlTitle.'.html">'.$item['title'].'</a></li>';
     }
     echo '</ul>';
 }

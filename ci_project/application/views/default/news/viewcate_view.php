@@ -1,6 +1,7 @@
 <div class="col-md-9">
-    <?php
-        foreach($newss as $news) {
+<?php
+if ($newss != false) {
+    foreach($newss as $news) {
 
 
     ?>
@@ -16,12 +17,12 @@
             ?>
         </div>
         <p>
-        <?php 
-        echo $news['info'];
-		$urlTitle = unicode($news['title']); 
-        ?>
+        <?php echo $news['info']; ?>
         </p>
-        <div><a href="<?php echo base_url() . 'news/detail/' . $news['id'] . '-' . $urlTitle . '.html'; ?>" class="view-detail">Xem thêm</a></div>
+        <div><a href="<?php echo base_url() . 'default/news/detail/' . $news['id']; ?>" class="view-detail">Xem thêm</a></div>
     </div>
     <?php } ?>
+<?php } else {
+    echo '<h1>Danh muc chua co tin tuc</h1>';
+} ?>
 </div>

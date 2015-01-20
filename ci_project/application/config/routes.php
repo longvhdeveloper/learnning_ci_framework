@@ -38,9 +38,10 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "default/news";
 $route['404_override'] = '';
 $route['admin'] = 'admin/index/index';
+$route['news/detail/(:num)-(:any).html'] = 'default/news/detail/$1';
 
 
 /* End of file routes.php */

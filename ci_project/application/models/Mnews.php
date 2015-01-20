@@ -67,4 +67,20 @@ class Mnews extends CI_Model
             return false;
         }
     }
+
+    public function getNewsByCateId($id)
+    {
+        $this->db->select('news.id, news.title, cate_news.name, image, info');
+        $this->db->where('cate_news.id', $id);
+
+        $this->db->join('cate_news', 'news.cat_id = cate_news.id');
+
+        $query = $this->db->get($this->_tableName);
+
+        if ($query->num_rows > 0) {
+            return $query->result_array(); 
+        } else {
+            return false;
+        }
+    }
 }

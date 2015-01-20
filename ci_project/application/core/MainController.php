@@ -5,7 +5,8 @@ class MainController extends MY_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->_data['module'] = $this->uri->segment(1);
+        //$this->_data['module'] = $this->uri->segment(1);
+        $this->_data['module'] = $this->router->fetch_module();
         $this->_data['path'] = $this->_data['module'] . DIRECTORY_SEPARATOR .'template';
 
         $this->load->model('Mcategories');

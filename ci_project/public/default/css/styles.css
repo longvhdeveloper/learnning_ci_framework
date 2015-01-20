@@ -1,0 +1,65 @@
+header {
+	margin-bottom:30px;
+}
+
+.well ul li{
+    list-style-type: none;
+}
+
+.fa.fa-chevron-down{
+    display: none;
+}
+
+.link:hover .fa.fa-chevron-down{
+    display: block;
+}
+
+.news-image{
+    margin-left: -15px;
+    margin-right: -35px;
+}
+
+.news-title{
+    font-size: 20px;
+}
+
+.news-content{
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    margin-left: 15px;
+}
+
+.view-detail{
+    float: right;
+    font-style: italic;
+    clear: both;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.news-info{
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.news-full .news-image{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.news-author{
+    float: right;
+    font-style: italic;
+    margin-right: 30px;
+}
+
+.others h3{
+    font-size: 16px;
+}
+
+.others li{
+    margin-left: -25px;
+}

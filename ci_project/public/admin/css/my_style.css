@@ -13,8 +13,9 @@
 }
 
 .my_error{
-    width: 250px;
+    width: 250px !important;
     margin: 10px 0px 0px 15px;
+    text-align: left !important;
 }
 
 .hideinit{

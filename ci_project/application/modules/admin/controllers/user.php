@@ -40,7 +40,7 @@ class User extends AdminController
         if ($this->form_validation->run()) {
             $data = array(
                 'username' => $this->input->post('fusername'),
-                'password' => $this->input->post('fpassword'),
+                'password' => md5($this->input->post('fpassword')),
                 'email' => $this->input->post('femail'),
                 'level' => $this->input->post('flevel'),
                 'datecreated' => time(),
@@ -114,7 +114,7 @@ class User extends AdminController
             );
 
             if ($this->input->post('fpassword') != '') {
-                $data['password'] = $this->input->post('fpassword');
+                $data['password'] = md5($this->input->post('fpassword'));
             }
 
             $this->Muser->updateUser($data, $id);

@@ -5,7 +5,7 @@ class Verify extends AdminController
     {
         parent::__construct();
     }
-    
+
     public function login()
     {
         $this->_data['content'] = 'verify/login_view';
@@ -14,7 +14,7 @@ class Verify extends AdminController
 
         if ($this->input->post('fsubmit')) {
             $username = (string) $this->input->post('fusername');
-            $password = (string) $this->input->post('fpassword');
+            $password = md5((string) $this->input->post('fpassword'));
 
             $this->load->model('Muser');
             $user = $this->Muser->checkLogin($username, $password);
@@ -28,7 +28,7 @@ class Verify extends AdminController
                 );
                 $this->session->set_userdata($session);
                 $this->session->set_flashdata('flash_message', 'Login success');
-                redirect(base_url().'admin/user');
+                redirect(base_url().'admin/index');
             }
         }
 
@@ -38,6 +38,8 @@ class Verify extends AdminController
     public function logout()
     {
         $this->session->sess_destroy();
+        session_start();
+        session_destroy();
         redirect(base_url(). 'admin/verify/login');
     }
 }

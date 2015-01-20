@@ -39,10 +39,10 @@ if ($this->session->userdata('id') > 0) {
         <div class="subnavbar-inner">
             <div class="container">
                 <ul class="mainnav">
-                    <li class=""><a href="<?php echo base_url().'admin/user/index' ?>"><i class="icon-dashboard"></i><span>Dashboard</span> </a></li>
+                    <li class=""><a href="<?php echo base_url().'admin/index' ?>"><i class="icon-dashboard"></i><span>Dashboard</span> </a></li>
                     <li class="active"><a href="<?php echo base_url().'admin/user/index' ?>"><i class="icon-user"></i><span>User</span> </a></li>
                     <li class="active"><a href="<?php echo base_url().'admin/news/index' ?>"><i class="icon-list"></i><span>News</span> </a></li>
-                    <li class="active"><a href="<?php echo base_url().'admin/category/index' ?>"><i class="icon-list"></i><span>Catetories</span> </a></li>
+                    <li class="active"><a href="<?php echo base_url().'admin/categories/index' ?>"><i class="icon-list"></i><span>Catetories</span> </a></li>
                 </ul>
             </div>
             <!-- /container -->
